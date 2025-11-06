@@ -17,7 +17,7 @@ A responsive and visually appealing image gallery that allows users to browse an
 ## ⚙️ Setup Instructions  
 1. Clone this repository to your local system:  
    ```bash
-   git clone https://github.com/your-username/image-gallery.git
+   git clone https://github.com/codebysadiya/image-gallery.git
 
 2. Navigate to the project folder:
    ```bash
