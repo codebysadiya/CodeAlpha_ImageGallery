@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Album Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="title" id="album-title">Album</h1>
+    <p class="subtitle">Enjoy the collection</p>
+    <a href="index.html" class="back-btn"><u>← Back to Albums</u></a>
+  </header>
+
+  <main>
+     <div class="gallery" id="gallery"></div>
+  </main>
+
+ <!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+
+  <!-- Three-dot menu -->
+  <div class="menu-container">
+    <span class="menu-icon">⋮</span>
+    <div class="menu-dropdown">
+      <button class="menu-item">Edit</button>
+      <button class="menu-item">Crop</button>
+      <button class="menu-item" id="open-filters">Filters</button>
+      <button class="menu-item">Share</button>
+      <button class="menu-item delete">Delete</button>
+    </div>
+  </div>
+
+  <img class="lightbox-img" src="" alt="Preview" />
+
+  <div class="lightbox-nav">
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+  </div>
+</div>
+
+    <!-- Filter Toolbar -->
+<div id="filter-toolbar" class="filter-toolbar">
+    <span class="filter-close">&times;</span>
+  <h3>Adjust Filters</h3>
+  <label>Brightness <input type="range" id="brightness" min="50" max="150" value="100"></label>
+  <label>Contrast <input type="range" id="contrast" min="50" max="150" value="100"></label>
+  <label>Saturation <input type="range" id="saturate" min="50" max="150" value="100"></label>
+  <label>Grayscale <input type="range" id="grayscale" min="0" max="100" value="0"></label>
+  <label>Blur <input type="range" id="blur" min="0" max="10" value="0"></label>
+  <div class="filter-buttons">
+    <button id="apply-filters">Apply</button>
+    <button id="reset-filters">Reset</button>
+  </div>
+</div>
+
+  <footer>
+    <p>&copy; 2025 My Image Gallery | Built with HTML, CSS & JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
